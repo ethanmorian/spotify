@@ -41,6 +41,7 @@ dependencies:
   rxdart:
   http:
   provider:
+  get_it:
 
 dev_dependencies:
   flutter_test:
