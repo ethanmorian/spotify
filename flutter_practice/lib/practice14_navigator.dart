@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/second.dart';
+import 'package:flutter_practice/navigator/second.dart';
 
 void main() {
   runApp(const MyApp());

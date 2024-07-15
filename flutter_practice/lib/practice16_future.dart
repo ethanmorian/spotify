@@ -48,7 +48,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   static Future loadJson() async {
-    final String response = await rootBundle.loadString('lib/users.json');
+    final String response = await rootBundle.loadString('lib/future/users.json');
     final data = await json.decode(response);
     return data['users'];
   }
