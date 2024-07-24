@@ -103,6 +103,9 @@ class _HomePageState extends State<HomePage> {
   var messageString = "";
   bool isSent = false;
 
+  get myDeviceToken => null;
+  get serverKey => null;
+
   void getMyDeviceToken() async {
     final token = await FirebaseMessaging.instance.getToken();
     print("내 디바이스 토큰: $token");
