@@ -52,7 +52,8 @@ dependencies:
   firebase_core: ^3.2.0
   firebase_auth: ^5.1.2
   firebase_messaging: ^15.0.3
-  photo_view:
+  photo_view: ^0.15.0
+  image_gallery_saver:
 
 dev_dependencies:
   flutter_test:
