@@ -46,6 +46,6 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Our application needs permissionto save photos.</string>
+	<string>내용을 이미지로 저장하도록 허용합니다.</string>
 </dict>
 </plist>
