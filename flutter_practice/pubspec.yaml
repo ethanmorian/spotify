@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   youtube_player_flutter:
   shared_preferences:
-  dio:
+  dio: ^5.4.3
   rxdart:
   http:
   provider:
@@ -57,6 +57,7 @@ dependencies:
   flutter_inappwebview: ^5.7.2+3
   flutter_secure_keyboard: ^3.0.0
   flutter_image_saver: ^1.0.1
+  debounce_throttle: ^2.0.0
 
 dev_dependencies:
   flutter_test:
