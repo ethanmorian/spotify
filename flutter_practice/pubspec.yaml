@@ -55,6 +55,7 @@ dependencies:
   photo_view: ^0.15.0
   image_gallery_saver:
   flutter_inappwebview: ^5.7.2+3
+  flutter_secure_keyboard: ^3.0.0
 
 dev_dependencies:
   flutter_test:
