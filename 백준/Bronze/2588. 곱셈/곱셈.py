@@ -1,6 +1,0 @@
-a = input()
-b = input()
-print(eval(f"{a}*{b[2]}"))
-print(eval(f"{a}*{b[1]}"))
-print(eval(f"{a}*{b[0]}"))
-print(eval(f"{a}*{b}"))
