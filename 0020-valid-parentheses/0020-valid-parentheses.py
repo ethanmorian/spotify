@@ -5,9 +5,9 @@ class Solution:
 
         for char in s:
             if char in mapping:
-                top_element = stack.pop() if stack else '#'
-                if mapping[char] != top_element:
+                if not stack or stack[-1] != mapping[char]:
                     return False
+                stack.pop()
             else:
                 stack.append(char)
         
