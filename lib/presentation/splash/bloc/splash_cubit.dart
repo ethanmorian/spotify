@@ -10,6 +10,8 @@ class SplashCubit extends Cubit<SplashState> {
         seconds: 2,
       ),
     );
-    emit(Authenticated());
+    emit(
+      UnAuthenticated(),
+    );
   }
 }
