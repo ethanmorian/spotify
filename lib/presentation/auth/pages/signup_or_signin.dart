@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:spotify/common/widgets/button/basic_app_button.dart';
+import 'package:spotify/common/helpers/is_dark_mode.dart';
+
+;import 'package:spotify/common/widgets/button/basic_app_button.dart';
 import 'package:spotify/core/config/assets/app_images.dart';
 import 'package:spotify/core/config/assets/app_vectors.dart';
 import 'package:spotify/core/config/theme/app_colors.dart';
@@ -84,12 +86,13 @@ class SignupOrSigninPage extends StatelessWidget {
                         flex: 1,
                         child: TextButton(
                           onPressed: () {},
-                          child: const Text(
+                          child: Text(
                             'Sign in',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
-                              color: Colors.white,
+                              color: context.isDarkMode ? Colors.white : Colors
+                                  .black,
                             ),
                           ),
                         ),
