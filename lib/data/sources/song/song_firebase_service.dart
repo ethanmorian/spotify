@@ -3,11 +3,11 @@ import 'package:dartz/dartz.dart';
 import 'package:spotify/data/models/song/song.dart';
 import 'package:spotify/domain/entities/song/song.dart';
 
-abstract class SongFirbaseService {
+abstract class SongFirebaseService {
   Future<Either> getNewsSongs();
 }
 
-class SongFirbaseServiceImpl extends SongFirbaseService {
+class SongFirebaseServiceImpl extends SongFirebaseService {
   @override
   Future<Either> getNewsSongs() async {
     try {
