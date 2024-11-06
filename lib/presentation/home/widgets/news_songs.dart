@@ -63,7 +63,7 @@ class NewsSongs extends StatelessWidget {
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: NetworkImage(
-                          '${AppURLs.firestorage}${songs[index].artist} - ${songs[index].title}.jpg?${AppURLs.midiaAlt}',
+                          '${AppURLs.coverFirestorage}${songs[index].artist} - ${songs[index].title}.jpg?${AppURLs.midiaAlt}',
                         ),
                       ),
                     ),
