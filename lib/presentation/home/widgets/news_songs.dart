@@ -76,7 +76,7 @@ class NewsSongs extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: context.isDarkMode
-                              ? AppColors.dartGrey
+                              ? AppColors.darkGrey
                               : const Color(0xffE6E6E6),
                         ),
                         child: Icon(

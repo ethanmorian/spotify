@@ -32,7 +32,7 @@ class FavoriteButton extends StatelessWidget {
                     ? Icons.favorite
                     : Icons.favorite_outline_outlined,
                 size: 25,
-                color: AppColors.dartGrey,
+                color: AppColors.darkGrey,
               ),
             );
           }
@@ -49,7 +49,7 @@ class FavoriteButton extends StatelessWidget {
                     ? Icons.favorite
                     : Icons.favorite_outline_outlined,
                 size: 25,
-                color: AppColors.dartGrey,
+                color: AppColors.darkGrey,
               ),
             );
           }
