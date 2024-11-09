@@ -7,8 +7,7 @@ import 'package:spotify/data/models/auth/create_user_req.dart';
 import 'package:spotify/domain/usecases/auth/signup.dart';
 import 'package:spotify/presentation/auth/pages/signin.dart';
 import 'package:spotify/presentation/home/pages/home.dart';
-
-import '../../../service_locator.dart';
+import 'package:spotify/service_locator.dart';
 
 class SignupPage extends StatelessWidget {
   SignupPage({super.key});

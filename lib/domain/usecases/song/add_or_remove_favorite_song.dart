@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:spotify/core/usecase/usecase.dart';
 import 'package:spotify/domain/repositories/song/song.dart';
-
-import '../../../service_locator.dart';
+import 'package:spotify/service_locator.dart';
 
 class AddOrRemoveFavoriteSongUseCase implements UseCase<Either, String> {
   @override

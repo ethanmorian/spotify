@@ -4,8 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:spotify/data/models/song/song.dart';
 import 'package:spotify/domain/entities/song/song.dart';
 import 'package:spotify/domain/usecases/song/is_favorite_song.dart';
-
-import '../../../service_locator.dart';
+import 'package:spotify/service_locator.dart';
 
 abstract class SongFirebaseService {
   Future<Either> getNewsSongs();

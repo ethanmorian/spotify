@@ -4,11 +4,10 @@ import 'package:spotify/common/widgets/appbar/app_bar.dart';
 import 'package:spotify/common/widgets/button/basic_app_button.dart';
 import 'package:spotify/core/config/assets/app_vectors.dart';
 import 'package:spotify/data/models/auth/signin_user_req.dart';
+import 'package:spotify/domain/usecases/auth/signin.dart';
 import 'package:spotify/presentation/auth/pages/signup.dart';
-
-import '../../../domain/usecases/auth/signin.dart';
-import '../../../service_locator.dart';
-import '../../home/pages/home.dart';
+import 'package:spotify/presentation/home/pages/home.dart';
+import 'package:spotify/service_locator.dart';
 
 class SigninPage extends StatelessWidget {
   SigninPage({super.key});
