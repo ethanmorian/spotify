@@ -7,6 +7,6 @@ import '../../repositories/song/song.dart';
 class GetPlayListUseCase implements UseCase<Either, dynamic> {
   @override
   Future<Either> call({params}) async {
-    return sl<SongRepository>().getPlayList();
+    return await sl<SongRepository>().getPlayList();
   }
 }
