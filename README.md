@@ -1,16 +1,25 @@
 # spotify
 
-A new Flutter project.
+This is a Spotify clone app built based on the "Spotify Redesign - Free UI Kit" from Figma Community.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User Authentication: Sign up and login using email and password.
+- Music Playback: Ability to play available songs in the app.
+- Favorites: Mark songs as favorites for easy access.
+- Profile Page: View all favorite songs in the user's profile.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Frontend: Flutter
+- Authentication: Firebase Authentication
+- State Management: BLoC (Cubit for state management)
+- Database: Firebase Firestore
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+
+![](assets/screenshots/1.png)
+![](assets/screenshots/2.png)
+![](assets/screenshots/3.png)
+![](assets/screenshots/4.png)
+![](assets/screenshots/5.png)
