@@ -68,7 +68,7 @@ class PlayList extends StatelessWidget {
   Widget _songs(List<SongEntity> songs) {
     return ListView.separated(
       shrinkWrap: true,
-      itemBuilder: (context, index) {
+      itemBuilder: (BuildContext context, index) {
         return GestureDetector(
           onTap: () {
             Navigator.push(
@@ -88,7 +88,6 @@ class PlayList extends StatelessWidget {
                   Container(
                     height: 45,
                     width: 45,
-                    transform: Matrix4.translationValues(10, 10, 0),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: context.isDarkMode
