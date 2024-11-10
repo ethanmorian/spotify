@@ -18,8 +18,10 @@ This is a Spotify clone app built based on the "Spotify Redesign - Free UI Kit" 
 
 ## Screenshots
 
-![](assets/screenshots/1.png)
-![](assets/screenshots/2.png)
-![](assets/screenshots/3.png)
-![](assets/screenshots/4.png)
-![](assets/screenshots/5.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="assets/screenshots/1.png" width="200" />
+  <img src="assets/screenshots/2.png" width="200" />
+  <img src="assets/screenshots/3.png" width="200" />
+  <img src="assets/screenshots/4.png" width="200" />
+  <img src="assets/screenshots/5.png" width="200" />
+</div>
