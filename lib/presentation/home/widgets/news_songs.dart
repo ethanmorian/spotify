@@ -38,13 +38,14 @@ class NewsSongs extends StatelessWidget {
   Widget _songs(List<SongEntity> songs) {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
+      shrinkWrap: true,
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => SongPlayerPage(
+                builder: (BuildContext context) => SongPlayerPage(
                   songEntity: songs[index],
                 ),
               ),
@@ -62,7 +63,7 @@ class NewsSongs extends StatelessWidget {
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: NetworkImage(
-                          '${AppURLs.coverFirestorage}${songs[index].artist} - ${songs[index].title}.jpg?${AppURLs.midiaAlt}',
+                          '${AppURLs.coverFirestorage}${songs[index].artist} - ${songs[index].title}.jpg?${AppURLs.mediaAlt}',
                         ),
                       ),
                     ),

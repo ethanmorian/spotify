@@ -16,9 +16,10 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const BasicAppbar(
-        backgroundColor: Color(0xff2C2B2B),
-        title: Text(
+      appBar: BasicAppbar(
+        backgroundColor:
+            context.isDarkMode ? const Color(0xff2C2B2B) : Colors.white,
+        title: const Text(
           'Profile',
         ),
       ),
@@ -37,14 +38,9 @@ class ProfilePage extends StatelessWidget {
 
   Widget _profileInfo(BuildContext context) {
     return BlocProvider(
-      create: (context) =>
-      ProfileInfoCubit()
-        ..getUser(),
+      create: (context) => ProfileInfoCubit()..getUser(),
       child: Container(
-        height: MediaQuery
-            .of(context)
-            .size
-            .height / 3.5,
+        height: MediaQuery.of(context).size.height / 3.5,
         width: double.infinity,
         decoration: BoxDecoration(
           color: context.isDarkMode ? const Color(0xff2C2B2B) : Colors.white,
@@ -108,9 +104,7 @@ class ProfilePage extends StatelessWidget {
 
   Widget _favoriteSongs() {
     return BlocProvider(
-      create: (context) =>
-      FavoriteSongsCubit()
-        ..getFavoriteSongs(),
+      create: (context) => FavoriteSongsCubit()..getFavoriteSongs(),
       child: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 16,
@@ -138,9 +132,8 @@ class ProfilePage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  SongPlayerPage(
-                                      songEntity: state.favoriteSongs[index]),
+                              builder: (BuildContext context) => SongPlayerPage(
+                                  songEntity: state.favoriteSongs[index]),
                             ),
                           );
                         },
@@ -156,11 +149,7 @@ class ProfilePage extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(20),
                                     image: DecorationImage(
                                       image: NetworkImage(
-                                        '${AppURLs.coverFirestorage}${state
-                                            .favoriteSongs[index]
-                                            .artist} - ${state
-                                            .favoriteSongs[index]
-                                            .title}.jpg?${AppURLs.midiaAlt}',
+                                        '${AppURLs.coverFirestorage}${state.favoriteSongs[index].artist} - ${state.favoriteSongs[index].title}.jpg?${AppURLs.mediaAlt}',
                                       ),
                                     ),
                                   ),
@@ -217,8 +206,7 @@ class ProfilePage extends StatelessWidget {
                         ),
                       );
                     },
-                    separatorBuilder: (context, index) =>
-                    const SizedBox(
+                    separatorBuilder: (context, index) => const SizedBox(
                       height: 20,
                     ),
                     itemCount: state.favoriteSongs.length,
