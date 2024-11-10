@@ -27,7 +27,7 @@ class SignupPage extends StatelessWidget {
           width: 40,
         ),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
           vertical: 50,
           horizontal: 30,
@@ -65,6 +65,7 @@ class SignupPage extends StatelessWidget {
                       content: Text(
                         l,
                       ),
+                      behavior: SnackBarBehavior.floating,
                     );
                     ScaffoldMessenger.of(context).showSnackBar(
                       snackBar,
