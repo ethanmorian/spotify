@@ -17,7 +17,7 @@ class NewsSongs extends StatelessWidget {
       create: (_) => NewsSongsCubit()..getNewsSongs(),
       child: SizedBox(
         height: 200,
-        child: BlocBuilder(
+        child: BlocBuilder<NewsSongsCubit, NewsSongsState>(
           builder: (context, state) {
             if (state is NewsSongsLoading) {
               return Container(

@@ -1,13 +1,13 @@
 import 'package:spotify/domain/entities/song/song.dart';
 
-abstract class NewSongsState {}
+abstract class NewsSongsState {}
 
-class NewsSongsLoading extends NewSongsState {}
+class NewsSongsLoading extends NewsSongsState {}
 
-class NewsSongsLoaded extends NewSongsState {
+class NewsSongsLoaded extends NewsSongsState {
   final List<SongEntity> songs;
 
   NewsSongsLoaded({required this.songs});
 }
 
-class NewsSongsLoadFailure extends NewSongsState {}
+class NewsSongsLoadFailure extends NewsSongsState {}
