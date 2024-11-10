@@ -24,4 +24,7 @@ This is a Spotify clone app built based on the "Spotify Redesign - Free UI Kit" 
   <img src="assets/screenshots/3.png" width="200" />
   <img src="assets/screenshots/4.png" width="200" />
   <img src="assets/screenshots/5.png" width="200" />
+  <img src="assets/screenshots/6.png" width="200" />
+  <img src="assets/screenshots/7.png" width="200" />
+  <img src="assets/screenshots/8.png" width="200" />
 </div>
