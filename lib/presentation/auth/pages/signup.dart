@@ -102,7 +102,7 @@ class SignupPage extends StatelessWidget {
 
   Widget _fullNameField(BuildContext context) {
     return TextField(
-      controller: _email,
+      controller: _fullName,
       decoration: const InputDecoration(
         hintText: 'Full Name',
       ).applyDefaults(
