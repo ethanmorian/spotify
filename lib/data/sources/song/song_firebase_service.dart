@@ -11,7 +11,7 @@ abstract class SongFirebaseService {
 
   Future<Either> getPlayList();
 
-  Future<Either> addOrRemoveFavoriteSongs(String songId);
+  Future<Either> addOrRemoveFavoriteSong(String songId);
 
   Future<bool> isFavoriteSong(String songId);
 
@@ -75,7 +75,7 @@ class SongFirebaseServiceImpl extends SongFirebaseService {
   }
 
   @override
-  Future<Either> addOrRemoveFavoriteSongs(String songId) async {
+  Future<Either> addOrRemoveFavoriteSong(String songId) async {
     try {
       final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
       final FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
@@ -147,7 +147,7 @@ class SongFirebaseServiceImpl extends SongFirebaseService {
       QuerySnapshot favoritesSnapshot = await firebaseFirestore
           .collection('Users')
           .doc(uId)
-          .collection('favorites')
+          .collection('Favorites')
           .get();
 
       for (var element in favoritesSnapshot.docs) {
