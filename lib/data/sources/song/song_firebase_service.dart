@@ -155,12 +155,14 @@ class SongFirebaseServiceImpl extends SongFirebaseService {
         var song =
             await firebaseFirestore.collection('Songs').doc(songId).get();
         SongModel songModel = SongModel.fromJson(song.data()!);
+        songModel.isFavorite = true;
+        songModel.songId = songId;
         favoriteSongs.add(songModel.toEntity());
       }
 
       return Right(favoriteSongs);
     } catch (e) {
-      return Left('An error occurred');
+      return const Left('An error occurred');
     }
   }
 }
