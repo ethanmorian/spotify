@@ -12,7 +12,7 @@ This is a Spotify clone app built based on the "Spotify Redesign - Free UI Kit" 
 ## Tech Stack
 
 - Authentication: Firebase Authentication
-- State Management: BLoC (Cubit for state management)
+- State Management: BLoC
 - Database: Firebase Firestore
 
 ## Screenshots
