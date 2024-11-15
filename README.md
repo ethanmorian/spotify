@@ -1,6 +1,6 @@
 # spotify
 
-This is a Spotify clone app built based on the "Spotify Redesign - Free UI Kit" from Figma Community.
+A Spotify clone featuring email login, music playback, and favorites functionality, built using the "Spotify Redesign - Free UI Kit" from Figma Community.
 
 ## Features
 
