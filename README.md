@@ -7,7 +7,6 @@ A Spotify clone app built with **BLoC** for state management, **Firebase** for a
 - **User Authentication**: Sign up and login using email and password via Firebase Authentication.
 - **Music Playback**: Stream available songs in the app.
 - **Favorites**: Mark songs as favorites for easy access.
-- **Profile Page**: View all favorite songs in the user's profile.
 
 ## Screenshots
 
