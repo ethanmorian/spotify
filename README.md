@@ -1,19 +1,13 @@
-# spotify
+# Spotify
 
-A Spotify clone featuring email login, music playback, and favorites functionality, built using the "Spotify Redesign - Free UI Kit" from Figma Community.
+A Spotify clone app built with **BLoC** for state management, **Firebase** for authentication and data storage, and **Clean Architecture** for better code maintainability. The app includes features like email login, music playback, favorites functionality, and user profiles.
 
 ## Features
 
-- User Authentication: Sign up and login using email and password.
-- Music Playback: Ability to play available songs in the app.
-- Favorites: Mark songs as favorites for easy access.
-- Profile Page: View all favorite songs in the user's profile.
-
-## Tech Stack
-
-- Authentication: Firebase Authentication
-- State Management: BLoC
-- Database: Firebase Firestore
+- **User Authentication**: Sign up and login using email and password via Firebase Authentication.
+- **Music Playback**: Stream available songs in the app.
+- **Favorites**: Mark songs as favorites for easy access.
+- **Profile Page**: View all favorite songs in the user's profile.
 
 ## Screenshots
 
